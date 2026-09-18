@@ -1,0 +1,251 @@
+/* CSS STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE STYLE */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: brown;
+    background-color: white;
+}
+
+/* HEADER */
+header {
+    background-color: bisque;
+    color: burlywood;
+    text-align: center;
+    padding: 30px;
+}
+
+/* HEADINGS */
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* PARAGRAPHS */
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* NAVIGATION */
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: burlywood;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav a:focus {
+    outline: 2px solid white;
+}
+
+nav a:active {
+    color: #f5c6b8;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* PRODUCT CARDS */
+.product-grid article {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e0cfc5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* PRODUCT CARD HOVER */
+.product-grid article:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* LINKS */
+a {
+    color: #8d4f45;
+}
+
+a:hover {
+    color: #c06c5b;
+}
+
+a:focus {
+    outline: 2px solid #c06c5b;
+}
+
+/* FORMS */
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #e0cfc5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #bca9a0;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #c06c5b;
+}
+
+/* BUTTONS */
+input[type="submit"],
+input[type="reset"] {
+    width: auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #6d4c41;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #8d4f45;
+}
+
+/* TABLE */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #d8c5bc;
+}
+
+th {
+    background-color: #6d4c41;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: bisque;
+    color: burlywood;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}

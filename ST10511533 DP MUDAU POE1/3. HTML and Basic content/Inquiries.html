@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <!-- HEADER -->
+    <header>
+        <h1>Sweet Crumbs Bakery</h1>
+        <p>Fresh, high-quality and affordable baked products</p>
+        <link rel="stylesheet" href="styling.css">
+ <!-- NAVIGATION MENU -->
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="aboutus.html">About Us</a> 
+            <a href="gallery.html">Gallery</a> 
+            <a href="services.html">Services</a>
+            <a href="Inquiries.html">Inquiry</a>
+        </nav>
+    </header>
+    <!-- ORDER / ENQUIRY FORM -->
+                   <h1>Order / Enquiry</h1>
+
+        <p>
+            Complete the form below to make an enquiry or request
+            a customised cake.
+        </p>
+        <form>
+
+            <label for="name">Full Name:</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <br>
+            <input type="tel" id="phone" name="phone">
+
+            <br><br>
+
+            <label for="product">Select Product:</label>
+            <br>
+
+            <select id="product" name="product">
+
+                <option value="bread">Bread</option>
+                <option value="cake">Cake</option>
+                <option value="cupcakes">Cupcakes</option>
+                <option value="pastries">Pastries</option>
+                <option value="biscuits">Biscuits</option>
+                <option value="customised-cake">
+                    Customised Cake
+                </option>
+
+            </select>
+
+            <br><br>
+
+            <label for="date">Preferred Date:</label>
+            <br>
+            <input type="date" id="date" name="date">
+
+            <br><br>
+
+            <label for="message">Message / Cake Request:</label>
+            <br>
+
+            <textarea id="message"
+                      name="message"
+                      rows="6"
+                      cols="40"
+                      placeholder="Enter your enquiry here..."
+                      required></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit Enquiry">
+
+            <input type="reset" value="Clear Form">
+
+        </form>
+
+    </section>
+</html>
